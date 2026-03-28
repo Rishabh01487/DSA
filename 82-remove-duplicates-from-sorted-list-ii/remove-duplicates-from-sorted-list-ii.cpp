@@ -8,7 +8,7 @@ public:
 
         while (curr) {
             if (curr->next && curr->val == curr->next->val) {
-                // Found duplicates: skip the entire block
+                
                 ListNode* temp = curr; // Start of duplicates
                 while (temp->next && temp->val == temp->next->val) {
                     temp = temp->next;
