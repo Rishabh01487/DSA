@@ -6,7 +6,7 @@ public:
         int ans = 0;
         
         for (int i = 0; i < cost.size(); i++) {
-            if ((i + 1) % 3 != 0) { // every 3rd candy is free
+            if ((i + 1) % 3 != 0) { 
                 ans += cost[i];
             }
         }
