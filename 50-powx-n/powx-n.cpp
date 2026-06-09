@@ -11,8 +11,10 @@ public:
 
         if(n%2==0)
             return solve(x*x,n/2);
+            else{
 
          return x*solve(x*x,(n-1)/2);
+            }
 
         }
 
