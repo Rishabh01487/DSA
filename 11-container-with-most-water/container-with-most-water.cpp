@@ -21,3 +21,4 @@ public:
         
     }
 };
+//complexity=n+n-d=n=O(n)
