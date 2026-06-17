@@ -8,9 +8,9 @@ public:
         while(left<right){
             int width=right-left;
             int ht=min(height[left],height[right]);
-            int Area_Curr_container=width*ht;
-            maxWater=max(maxWater,Area_Curr_container); 
-             if(height[left]<height[right]){
+            int curr_water_contained=ht*width;
+            maxWater=max(maxWater,curr_water_contained);
+            if(height[left]<height[right]){
                 left++;
             }
             else{
@@ -18,7 +18,5 @@ public:
             }
         }
         return maxWater;
-        
     }
 };
-//complexity=n+n-d=n=O(n)
