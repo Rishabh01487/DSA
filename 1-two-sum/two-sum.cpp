@@ -7,7 +7,7 @@ public:
         int num=nums[i];
         int moreNeeded=target-num;
             if(mp.find(moreNeeded)==mp.end()){
-                mp[num]=i;
+                mp.insert({num,i});
             }
             else 
             return {mp[moreNeeded],i};        
