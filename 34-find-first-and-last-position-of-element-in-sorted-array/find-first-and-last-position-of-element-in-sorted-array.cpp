@@ -12,7 +12,7 @@ int firstOcc(vector<int>& nums, int target)
             if(nums[mid] == target)
             {
                 ans = mid;
-                right = mid - 1;   // search left side
+                right = mid - 1;   
             }
             else if(nums[mid] < target)
                 left = mid + 1;
@@ -36,7 +36,7 @@ int firstOcc(vector<int>& nums, int target)
             if(nums[mid] == target)
             {
                 ans = mid;
-                left = mid + 1;   // search right side
+                left = mid + 1;   
             }
             else if(nums[mid] < target)
                 left = mid + 1;
